@@ -188,16 +188,16 @@ transition: 0.5s;
 
 }
 .hero h1:nth-child(1):hover ~ .concert{
-  background-image: url(concert12.jpg);b
+  background-image: url(Assets/concert12.jpg);
 
 
 }
 .hero h1:nth-child(2):hover ~ .concert{
-  background-image: url(concert13.jpg);
+  background-image: url(Assets/concert13.jpg);
 
 }
 .hero h1:nth-child(3):hover ~ .concert{
-  background-image: url(lol.jpg);
+  background-image: url(Assets/lol.jpg);
 
 }
 
