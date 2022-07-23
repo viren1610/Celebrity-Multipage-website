@@ -8,7 +8,7 @@
   <body>
     <section id="header">
       <div class="container">
-      <img src="goat.jpg" alt="" class="logo">
+      <img src="Assets/goat.jpg" alt="" class="logo">
       <div class="header-text">
         <h1>Drive-Thru (EP)</h1>
         <p>
@@ -20,7 +20,7 @@ The names of the tracks in the EP are - 'Peaches', 'Lemonade', 'Caviar', 'Red Ch
 
 <div class="left-col">
   <p>Preview Now !</p>
-  <img src="play.png" alt="" id="icon">
+  <img src="Assets/play.png" alt="" id="icon">
 </div>
       </div>
       </div>
@@ -34,8 +34,8 @@ The names of the tracks in the EP are - 'Peaches', 'Lemonade', 'Caviar', 'Red Ch
   <li><a href="index.html">News</a></li>
 </ul>
 </nav>
-<img src="menu.png" alt="" id="menubtn">
-<audio src="diljitsong.mp3" id="vanilla">
+<img src="Assets/menu.png" alt="" id="menubtn">
+<audio src="Assets/diljitsong.mp3" id="vanilla">
 </audio>
 
 <script>
@@ -45,10 +45,10 @@ var icon = document.getElementById("icon");
 icon.onclick =function(){
   if(vanilla.paused){
     vanilla.play();
-     icon.src = "pause1.png";
+     icon.src = "Assets/pause1.png";
   }else{
     vanilla.pause();
-     icon.src = "play.png";
+     icon.src = "Assets/play.png";
 
   }
 }
