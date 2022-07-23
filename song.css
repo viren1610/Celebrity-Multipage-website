@@ -7,7 +7,7 @@ font-family: sans-serif;
 .hero{
   width: 160vh;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(newsletter.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(Assets/newsletter.webp);
   background-size:cover;
   background-position: center;
   padding: 10px 10%;
@@ -68,25 +68,6 @@ span{
   display: block;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #sidenav{
