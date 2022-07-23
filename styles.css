@@ -5,7 +5,7 @@ font-family: sans-serif;
 }
 #header{
  height: 100vh;
- background-image: url(DJ.jpg);
+ background-image: url(Assets/DJ.jpg);
 background-repeat: no-repeat;
 background-position: right;
 background-size: contain;
