@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="play.css">
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+      <img src="goat.jpg" alt="" class="logo">
+      <div class="header-text">
+        <h1>Drive-Thru (EP)</h1>
+        <p>
+Diljit Dosanjh’s thirteenth album is his most versatile to date. With the aid of producers and lyricists,Drive-Thru struts through the divergent territories explored on 2018 releases.R&B and folk fuses with electronic beats, the singer-actor proves he can inhabit any role
+The names of the tracks in the EP are - 'Peaches', 'Lemonade', 'Caviar', 'Red Chilli', 'Vanilla'.
+        </p> <br> <br>
+
+        <h3>Preview Vanilla from the Drive-Thru (EP) now!</h3>
+
+<div class="left-col">
+  <p>Preview Now !</p>
+  <img src="play.png" alt="" id="icon">
+</div>
+      </div>
+      </div>
+</section>
+
+<nav id="sidenav">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="play.html">New Release</a></li>
+  <li><a href="song.html">Concert</a></li>
+  <li><a href="index.html">News</a></li>
+</ul>
+</nav>
+<img src="menu.png" alt="" id="menubtn">
+<audio src="diljitsong.mp3" id="vanilla">
+</audio>
+
+<script>
+
+var vanilla = document.getElementById("vanilla")
+var icon = document.getElementById("icon");
+icon.onclick =function(){
+  if(vanilla.paused){
+    vanilla.play();
+     icon.src = "pause1.png";
+  }else{
+    vanilla.pause();
+     icon.src = "play.png";
+
+  }
+}
+
+var menubtn = document.getElementById("menubtn");
+var sidenav = document.getElementById("sidenav");
+sidenav.style.left = "-250px";
+menubtn.onclick = function(){
+  if(sidenav.style.left == "-250px"){
+    sidenav.style.left = "0px";
+  }
+  else{
+  sidenav.style.left = "-250px";
+  }
+}
+
+</script>
+  </body>
+</html>

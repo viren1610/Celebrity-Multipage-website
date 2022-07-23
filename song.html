@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="song.css">
+  </head>
+  <body>
+<div class="hero">
+  <h3>Coming Soon !</h3>
+  <h1>To get updates regularly</h1>
+
+   <p> Regarding new music and upcoming concerts and music festivals in your city sign up to our Newsletters </p>
+   <form class="" action="index.html" method="post" name="submit-to-google-sheet">
+     <input type="email" name="Email" value="" placeholder="Your Email-Id">
+     <button type="submit" name="button"><img src="send-icon.png"alt=""width="30px"></button>
+   </form>
+   <span id="msg"></span>
+</div>
+
+
+<nav id="sidenav">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="play.html">New Release</a></li>
+  <li><a href="song.html">Concert</a></li>
+  <li><a href="index.html">News</a></li>
+</ul>
+</nav>
+<img src="menu.png" alt="" id="menubtn">
+
+<script>
+var menubtn = document.getElementById("menubtn");
+var sidenav = document.getElementById("sidenav");
+sidenav.style.left = "-250px";
+menubtn.onclick = function(){
+  if(sidenav.style.left == "-250px"){
+    sidenav.style.left = "0px";
+  }
+  else{
+  sidenav.style.left = "-250px";
+  }
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwNvzZCVtlOtmiG-YmorUpC7K67PYIrvK---Qk8GFtDPED_a1C4PMq4sUuMWhlOVHU/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.innerHTML = "Thank you for Subscribing!"
+      setTimeout(function () {
+          msg.innerHTML = ""
+      },1000)
+      form.reset()
+})
+    .catch(error => console.error('Error!', error.message))
+})
+
+</script>
+
+</body>
+</html>
